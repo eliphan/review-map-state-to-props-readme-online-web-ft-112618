@@ -33,4 +33,6 @@ class App extends Component {
   }
 }
 
-export default connect( state => ({ items: state.items }) )(App);
+const mapStateToProps = (state) => {
+  return { orangePeel: ['a', 'b', 'c'] };
+};
